@@ -1,0 +1,1169 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Most Popular Movie by Directors &#8212; Assignment8 Book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Discussion" href="discussion.html" />
+    <link rel="prev" title="Most Money Making Movie by Genre" href="data-cleaning.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Assignment8 Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Assignment 8 Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Part 1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="data-cleaning.html">
+   Most Money Making Movie by Genre
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Part 2
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Most Popular Movie by Directors
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Part 3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="discussion.html">
+   Discussion
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/data-analysis.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdata-analysis.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/data-analysis.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Most Popular Movie by Directors</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="most-popular-movie-by-directors">
+<h1>Most Popular Movie by Directors<a class="headerlink" href="#most-popular-movie-by-directors" title="Permalink to this headline">#</a></h1>
+<p>Second, to see which director had the most popular movie, I merged the Disney-director dataset with the disney_movies_total_gross dataset and used the inner join, which returned only the rows in both data frames. From there, I sorted the movies by the total gross box office and the inflation-adjusted gross.</p>
+<p>Let’s check out my analysis step by step.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lets import all the required libraries needed for the analysis</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># import all the required files</span>
+<span class="n">gross</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/disney_movies_total_gross.csv&quot;</span><span class="p">)</span>
+<span class="n">directors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/disney-director.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert the total_gross column from object to float</span>
+<span class="n">gross</span><span class="o">=</span> <span class="n">gross</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">total_gross</span> <span class="o">=</span> <span class="n">gross</span><span class="p">[</span><span class="s1">&#39;total_gross&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span> <span class="s1">&#39;[\$,)]&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span> <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">))</span>
+<span class="n">gross</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>movie_title</th>
+      <th>release_date</th>
+      <th>genre</th>
+      <th>MPAA_rating</th>
+      <th>total_gross</th>
+      <th>inflation_adjusted_gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Snow White and the Seven Dwarfs</td>
+      <td>Dec 21, 1937</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>184925485.0</td>
+      <td>$5,228,953,251</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Pinocchio</td>
+      <td>Feb 9, 1940</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>84300000.0</td>
+      <td>$2,188,229,052</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Fantasia</td>
+      <td>Nov 13, 1940</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>83320000.0</td>
+      <td>$2,187,090,808</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Song of the South</td>
+      <td>Nov 12, 1946</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>65000000.0</td>
+      <td>$1,078,510,579</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cinderella</td>
+      <td>Feb 15, 1950</td>
+      <td>Drama</td>
+      <td>G</td>
+      <td>85000000.0</td>
+      <td>$920,608,730</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gross</span> <span class="o">=</span> <span class="n">gross</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">inflation_adjusted_gross</span> <span class="o">=</span> <span class="n">gross</span><span class="p">[</span><span class="s1">&#39;inflation_adjusted_gross&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span> <span class="s1">&#39;[\$,)]&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span> <span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">))</span>
+<span class="n">gross</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>movie_title</th>
+      <th>release_date</th>
+      <th>genre</th>
+      <th>MPAA_rating</th>
+      <th>total_gross</th>
+      <th>inflation_adjusted_gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Snow White and the Seven Dwarfs</td>
+      <td>Dec 21, 1937</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>184925485.0</td>
+      <td>5.228953e+09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Pinocchio</td>
+      <td>Feb 9, 1940</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>84300000.0</td>
+      <td>2.188229e+09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Fantasia</td>
+      <td>Nov 13, 1940</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>83320000.0</td>
+      <td>2.187091e+09</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Song of the South</td>
+      <td>Nov 12, 1946</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>65000000.0</td>
+      <td>1.078511e+09</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cinderella</td>
+      <td>Feb 15, 1950</td>
+      <td>Drama</td>
+      <td>G</td>
+      <td>85000000.0</td>
+      <td>9.206087e+08</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>I used the following python codes to merge the two files.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gross_directors</span> <span class="o">=</span> <span class="n">directors</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">gross</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;movie_title&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># merge the disney-director file with the disney_movies_total_gross file </span>
+<span class="n">gross_directors</span> <span class="o">=</span> <span class="n">directors</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">gross</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;movie_title&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<span class="n">gross_directors</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>director</th>
+      <th>movie_title</th>
+      <th>release_date</th>
+      <th>genre</th>
+      <th>MPAA_rating</th>
+      <th>total_gross</th>
+      <th>inflation_adjusted_gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Snow White and the Seven Dwarfs</td>
+      <td>David Hand</td>
+      <td>Snow White and the Seven Dwarfs</td>
+      <td>Dec 21, 1937</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>184925485.0</td>
+      <td>5.228953e+09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Pinocchio</td>
+      <td>Ben Sharpsteen</td>
+      <td>Pinocchio</td>
+      <td>Feb 9, 1940</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>84300000.0</td>
+      <td>2.188229e+09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Fantasia</td>
+      <td>full credits</td>
+      <td>Fantasia</td>
+      <td>Nov 13, 1940</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>83320000.0</td>
+      <td>2.187091e+09</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Cinderella</td>
+      <td>Wilfred Jackson</td>
+      <td>Cinderella</td>
+      <td>Feb 15, 1950</td>
+      <td>Drama</td>
+      <td>G</td>
+      <td>85000000.0</td>
+      <td>9.206087e+08</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cinderella</td>
+      <td>Wilfred Jackson</td>
+      <td>Cinderella</td>
+      <td>Mar 13, 2015</td>
+      <td>Drama</td>
+      <td>PG</td>
+      <td>201151353.0</td>
+      <td>2.011514e+08</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop the duplicated column</span>
+<span class="n">gross_directors</span> <span class="o">=</span> <span class="n">gross_directors</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+<span class="n">gross_directors</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>director</th>
+      <th>movie_title</th>
+      <th>release_date</th>
+      <th>genre</th>
+      <th>MPAA_rating</th>
+      <th>total_gross</th>
+      <th>inflation_adjusted_gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>David Hand</td>
+      <td>Snow White and the Seven Dwarfs</td>
+      <td>Dec 21, 1937</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>184925485.0</td>
+      <td>5.228953e+09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Ben Sharpsteen</td>
+      <td>Pinocchio</td>
+      <td>Feb 9, 1940</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>84300000.0</td>
+      <td>2.188229e+09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>full credits</td>
+      <td>Fantasia</td>
+      <td>Nov 13, 1940</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>83320000.0</td>
+      <td>2.187091e+09</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Wilfred Jackson</td>
+      <td>Cinderella</td>
+      <td>Feb 15, 1950</td>
+      <td>Drama</td>
+      <td>G</td>
+      <td>85000000.0</td>
+      <td>9.206087e+08</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Wilfred Jackson</td>
+      <td>Cinderella</td>
+      <td>Mar 13, 2015</td>
+      <td>Drama</td>
+      <td>PG</td>
+      <td>201151353.0</td>
+      <td>2.011514e+08</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># sort the top five values of the total gross, reset index and drop the original index column</span>
+<span class="n">top_5_movies_gross</span> <span class="o">=</span> <span class="n">gross_directors</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;total_gross&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">])</span>
+<span class="n">top_5_movies_gross</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>director</th>
+      <th>movie_title</th>
+      <th>release_date</th>
+      <th>genre</th>
+      <th>MPAA_rating</th>
+      <th>total_gross</th>
+      <th>inflation_adjusted_gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Roger Allers</td>
+      <td>The Lion King</td>
+      <td>Jun 15, 1994</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>422780140.0</td>
+      <td>761640898.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Chris Buck</td>
+      <td>Frozen</td>
+      <td>Nov 22, 2013</td>
+      <td>Adventure</td>
+      <td>PG</td>
+      <td>400738009.0</td>
+      <td>414997174.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wolfgang Reitherman</td>
+      <td>The Jungle Book</td>
+      <td>Apr 15, 2016</td>
+      <td>Adventure</td>
+      <td>PG</td>
+      <td>364001123.0</td>
+      <td>364001123.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Byron Howard</td>
+      <td>Zootopia</td>
+      <td>Mar 4, 2016</td>
+      <td>Adventure</td>
+      <td>PG</td>
+      <td>341268248.0</td>
+      <td>341268248.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Clyde Geronimi</td>
+      <td>Alice in Wonderland</td>
+      <td>Mar 5, 2010</td>
+      <td>Adventure</td>
+      <td>PG</td>
+      <td>334191110.0</td>
+      <td>357063499.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualize the top 5 movies with the highest total gross box office using a bar plot</span>
+<span class="n">top_5_moives_gross_plot</span> <span class="o">=</span> <span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">top_5_movies_gross</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">mark_bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;movie_title:N&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Movie_Title&quot;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;-y&quot;</span><span class="p">),</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s2">&quot;total_gross:Q&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Total_Gross_Boxoffice&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Top_5_Moives_Gross&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">top_5_moives_gross_plot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\zengm\miniconda3\lib\site-packages\altair\utils\core.py:317: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for col_name, dtype in df.dtypes.iteritems():
+</pre></div>
+</div>
+<div class="output text_html">
+<div id="altair-viz-6793d35d1fe642deb26594a49088f66c"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-6793d35d1fe642deb26594a49088f66c") {
+      outputDiv = document.getElementById("altair-viz-6793d35d1fe642deb26594a49088f66c");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-a6a5f1abb67695d88646ae5b04d17f9a"}, "mark": {"type": "bar", "color": "blue", "opacity": 0.5}, "encoding": {"x": {"field": "movie_title", "sort": "-y", "title": "Movie_Title", "type": "nominal"}, "y": {"field": "total_gross", "title": "Total_Gross_Boxoffice", "type": "quantitative"}}, "height": 300, "title": "Top_5_Moives_Gross", "width": 300, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-a6a5f1abb67695d88646ae5b04d17f9a": [{"director": "Roger Allers", "movie_title": "The Lion King", "release_date": "Jun 15, 1994", "genre": "Adventure", "MPAA_rating": "G", "total_gross": 422780140.0, "inflation_adjusted_gross": 761640898.0}, {"director": "Chris Buck", "movie_title": "Frozen", "release_date": "Nov 22, 2013", "genre": "Adventure", "MPAA_rating": "PG", "total_gross": 400738009.0, "inflation_adjusted_gross": 414997174.0}, {"director": "Wolfgang Reitherman", "movie_title": "The Jungle Book", "release_date": "Apr 15, 2016", "genre": "Adventure", "MPAA_rating": "PG", "total_gross": 364001123.0, "inflation_adjusted_gross": 364001123.0}, {"director": "Byron Howard", "movie_title": "Zootopia", "release_date": "Mar 4, 2016", "genre": "Adventure", "MPAA_rating": "PG", "total_gross": 341268248.0, "inflation_adjusted_gross": 341268248.0}, {"director": "Clyde Geronimi", "movie_title": "Alice in Wonderland", "release_date": "Mar 5, 2010", "genre": "Adventure", "MPAA_rating": "PG", "total_gross": 334191110.0, "inflation_adjusted_gross": 357063499.0}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+<p>How much more total gross revenue did the Lion King make than Frozen after the inflation adjusted?</p>
+<p><span class="math notranslate nohighlight">\(761640898.0\)</span> <span class="math notranslate nohighlight">\(- 414997174.0\)</span> = <span class="math notranslate nohighlight">\(346643724.0\)</span></p>
+<div class="math notranslate nohighlight" id="equation-subtract-label1">
+<span class="eqno">(5)<a class="headerlink" href="#equation-subtract-label1" title="Permalink to this equation">#</a></span>\[a-b = c\]</div>
+<p>Equation <a class="reference internal" href="#equation-subtract-label1">(5)</a> is to calculate the difference between two values.</p>
+<p><a class="reference internal" href="#rogerallrs-figure"><span class="std std-numref">Fig. 5</span></a> is one of the two Directors of the Lion King <span id="id1">[<a class="reference internal" href="intro.html#id22" title="Wikipedia. Roger allers. https://en.wikipedia.org/wiki/Roger_Allers. Accessed: 2022-12-10.">Wikipedia, n.d.</a>]</span>.</p>
+<figure class="align-default" id="rogerallrs-figure">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Roger_Allers%2C_34th_Annie_Awards%2C_2007.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/a/ae/Roger_Allers%2C_34th_Annie_Awards%2C_2007.jpg" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Roger_Allers%2C_34th_Annie_Awards%2C_2007.jpg" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Roger Allers</span><a class="headerlink" href="#rogerallrs-figure" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>I used the following python codes to sort the ranking.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">top_5_movies_inflat</span> <span class="o">=</span> <span class="n">gross_directors</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;inflation_adjusted_gross&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort the top 5 movies with the highest inflation_adjusted total gross box office, reset index and drop the original index column</span>
+<span class="n">top_5_movies_inflat</span> <span class="o">=</span> <span class="n">gross_directors</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;inflation_adjusted_gross&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">top_5_movies_inflat</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>director</th>
+      <th>movie_title</th>
+      <th>release_date</th>
+      <th>genre</th>
+      <th>MPAA_rating</th>
+      <th>total_gross</th>
+      <th>inflation_adjusted_gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>David Hand</td>
+      <td>Snow White and the Seven Dwarfs</td>
+      <td>Dec 21, 1937</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>184925485.0</td>
+      <td>5.228953e+09</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Ben Sharpsteen</td>
+      <td>Pinocchio</td>
+      <td>Feb 9, 1940</td>
+      <td>Adventure</td>
+      <td>G</td>
+      <td>84300000.0</td>
+      <td>2.188229e+09</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>full credits</td>
+      <td>Fantasia</td>
+      <td>Nov 13, 1940</td>
+      <td>Musical</td>
+      <td>G</td>
+      <td>83320000.0</td>
+      <td>2.187091e+09</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Wolfgang Reitherman</td>
+      <td>101 Dalmatians</td>
+      <td>Jan 25, 1961</td>
+      <td>Comedy</td>
+      <td>G</td>
+      <td>153000000.0</td>
+      <td>1.362871e+09</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Hamilton Luske</td>
+      <td>Lady and the Tramp</td>
+      <td>Jun 22, 1955</td>
+      <td>Drama</td>
+      <td>G</td>
+      <td>93600000.0</td>
+      <td>1.236036e+09</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>How much more total gross revenue did the Snow White and the Seven Dwarfs make than Pinocchio?</p>
+<p><span class="math notranslate nohighlight">\(184925485.0\)</span> <span class="math notranslate nohighlight">\(- 84300000.0\)</span> = <span class="math notranslate nohighlight">\(100625485.0\)</span></p>
+<div class="math notranslate nohighlight" id="equation-subtract-label2">
+<span class="eqno">(6)<a class="headerlink" href="#equation-subtract-label2" title="Permalink to this equation">#</a></span>\[a-b = c\]</div>
+<p>Equation <a class="reference internal" href="#equation-subtract-label2">(6)</a> is to calculate the difference between two values.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualize the top 5 movies with the highest inflation adjusted gross box office receipts using a bar plot.</span>
+<span class="n">top_5_moives_inflated_plot</span> <span class="o">=</span> <span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">top_5_movies_inflat</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">mark_circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;movie_title:N&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Movie_Title&quot;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;-y&quot;</span><span class="p">),</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s2">&quot;inflation_adjusted_gross:Q&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Total_Gross_Inflated_Boxoffice&quot;</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Top_5_Moives_Gross_Inflated&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">top_5_moives_inflated_plot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\zengm\miniconda3\lib\site-packages\altair\utils\core.py:317: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for col_name, dtype in df.dtypes.iteritems():
+</pre></div>
+</div>
+<div class="output text_html">
+<div id="altair-viz-cd82828403744146993eed47bb13af31"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-cd82828403744146993eed47bb13af31") {
+      outputDiv = document.getElementById("altair-viz-cd82828403744146993eed47bb13af31");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-544734cf422a94d9996eab19816e940a"}, "mark": {"type": "circle", "color": "blue", "size": 300}, "encoding": {"x": {"field": "movie_title", "sort": "-y", "title": "Movie_Title", "type": "nominal"}, "y": {"field": "inflation_adjusted_gross", "title": "Total_Gross_Inflated_Boxoffice", "type": "quantitative"}}, "height": 300, "title": "Top_5_Moives_Gross_Inflated", "width": 300, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-544734cf422a94d9996eab19816e940a": [{"director": "David Hand", "movie_title": "Snow White and the Seven Dwarfs", "release_date": "Dec 21, 1937", "genre": "Musical", "MPAA_rating": "G", "total_gross": 184925485.0, "inflation_adjusted_gross": 5228953251.0}, {"director": "Ben Sharpsteen", "movie_title": "Pinocchio", "release_date": "Feb 9, 1940", "genre": "Adventure", "MPAA_rating": "G", "total_gross": 84300000.0, "inflation_adjusted_gross": 2188229052.0}, {"director": "full credits", "movie_title": "Fantasia", "release_date": "Nov 13, 1940", "genre": "Musical", "MPAA_rating": "G", "total_gross": 83320000.0, "inflation_adjusted_gross": 2187090808.0}, {"director": "Wolfgang Reitherman", "movie_title": "101 Dalmatians", "release_date": "Jan 25, 1961", "genre": "Comedy", "MPAA_rating": "G", "total_gross": 153000000.0, "inflation_adjusted_gross": 1362870985.0}, {"director": "Hamilton Luske", "movie_title": "Lady and the Tramp", "release_date": "Jun 22, 1955", "genre": "Drama", "MPAA_rating": "G", "total_gross": 93600000.0, "inflation_adjusted_gross": 1236035515.0}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+<p><a class="reference internal" href="#davidhand-figure"><span class="std std-numref">Fig. 6</span></a> is the Director of Snow White and the Seven Dwarfs <span id="id2">[<a class="reference internal" href="intro.html#id23" title="Wikipedia. David hand animator. https://en.wikipedia.org/wiki/David_Hand_(animator). Accessed: 2022-12-10.">Wikipedia, n.d.</a>]</span>.</p>
+<figure class="align-default" id="davidhand-figure">
+<a class="reference internal image-reference" href="https://d23.com/app/uploads/2015/07/david-hand-feat.jpg"><img alt="https://d23.com/app/uploads/2015/07/david-hand-feat.jpg" src="https://d23.com/app/uploads/2015/07/david-hand-feat.jpg" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">David Hand</span><a class="headerlink" href="#davidhand-figure" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="data-cleaning.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Most Money Making Movie by Genre</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="discussion.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Discussion</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Michelle Zeng<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
