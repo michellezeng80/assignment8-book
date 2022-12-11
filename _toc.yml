@@ -1,0 +1,15 @@
+# In_toc.yml
+format: jb-book
+root: intro
+parts:
+- caption: Part 1
+  chapters:
+  - file: data-cleaning
+- caption: Part 2
+  chapters:
+  - file: data-analysis
+- caption: Part 3
+  chapters:
+  - file: discussion   
+
+  
